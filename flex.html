@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex</title>
+</head>
+<style>
+	.flexContainer {
+		height: 500px;
+		background-color: yellow;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-items: center;
+	}
+	.flexItem {
+		width: 50px;
+		height: 50px;
+		background-color: blue;
+	}
+	.flexItem.two {
+		align-self: flex-end;
+		flex-grow: 1;
+		order: 12;
+	}
+	.flexItem.six {
+		align-self: flex-end;
+		flex-grow: 2;
+		order: 3;
+	}
+	.flexItem.seven {
+		order: 5;
+	}
+</style>
+<body>
+	<section class="flexContainer">
+		<div class="flexItem one">1</div>
+		<div class="flexItem two">2</div>
+		<div class="flexItem three">3</div>
+		<div class="flexItem four">4</div>
+		<div class="flexItem five">5</div>
+		<div class="flexItem six">6</div>
+		<div class="flexItem seven">7</div>
+		<div class="flexItem eight">8</div>
+		<div class="flexItem nine">9</div>
+		<div class="flexItem ten">10</div>
+		<div class="flexItem eleven">11</div>
+		<div class="flexItem twelve">12</div>
+	</section>
+</body>
+</html>
